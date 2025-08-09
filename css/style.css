@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0F1923;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+.container {
+    background: #1a2735;
+    padding: 25px;
+    border-radius: 15px;
+    width: 420px;
+    max-width: 90%;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
+}
+
+h1 {
+    text-align: center;
+    color: #FD4556;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+input[type="text"], input[type="date"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #0F1923;
+    color: white;
+    flex: 1;
+    font-size: 14px;
+    min-width: 140px;
+}
+
+input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+button {
+    background: #FD4556;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e53c4d;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 6px;
+}
+
+.filter-container label {
+    color: white;
+    font-size: 14px;
+}
+
+.filter-container input {
+    background: #0F1923;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #243447;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+li span {
+    color: white;
+    font-size: 14px;
+}
+
+li small {
+    display: block;
+    color: #bbb;
+    font-size: 12px;
+}
+
+.delete-btn {
+    background: transparent;
+    border: 2px solid #FD4556;
+    color: #FD4556;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.delete-btn:hover {
+    background: #FD4556;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    form {
+        flex-direction: column;
+    }
+    button {
+        width: 100%;
+    }
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .delete-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
